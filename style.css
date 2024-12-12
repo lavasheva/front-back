@@ -1,0 +1,752 @@
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+.center{
+    text-align: center;
+}
+.body{
+    background-color: rgb(178, 159, 202);
+}
+
+.TopDiv {
+    border: 3px outset rgb(0, 0, 0);
+    width: 100%;
+    overflow: hidden;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: large;
+  }
+#LeftTopDiv img {
+    width: 70px;
+}
+#LeftTopDiv {
+    width: 70px;
+    float: left;
+    margin-left: 3%;
+    margin-top: 1%;
+    text-align: center;
+}
+#RightTopDiv {
+    float: right;
+    margin-right: 30px;
+    text-align: right;
+}
+/* Базовые стили для меню */
+.MenuDiv {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border: 3px outset rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(178, 159, 202);
+}
+
+.MenuDiv ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.MenuDiv li {
+    padding: 0 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.MenuDiv a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.MenuDiv a:hover {
+    background-color: #dddddd81;
+    border-radius: 5px;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 480px) {
+    .MenuDiv ul {
+        flex-direction: column; /* Меню станет вертикальным */
+        align-items: center;    /* Центрируем элементы */
+    }
+
+    .MenuDiv li {
+        padding: 10px 0;       /* Уменьшенные отступы */
+        font-size: 16px;       /* Уменьшаем шрифт для экономии пространства */
+    }
+
+    .MenuDiv a {
+        padding: 8px 15px;     /* Уменьшаем отступы внутри ссылок */
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 3 колонки одинаковой ширины */
+        grid-template-rows: repeat(6, auto); /* 2 строки с высотой, автоматически подстраивающейся под контент */
+        gap: 20px; /* Отступы между элементами сетки */
+        padding: 20px; /* Отступы внутри контейнера */
+        background-color: rgb(178, 159, 202);
+    }
+    
+    .grid-item {
+        background-color: rgb(178, 159, 202);
+        border: 1px solid #ddd; /* Граница */
+        padding: 15px; /* Внутренние отступы */
+        text-align: center; /* Центрирование текста */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Тень для карточек */
+    }
+    #LeftTopDiv img {
+        width: 50px;
+    }
+    #LeftTopDiv {
+        width: 50px;
+        float: left;
+        margin-left: 3%;
+        margin-top: 10%;
+        text-align: center;
+    }
+    #RightTopDiv {
+        float: right;
+        margin-right: 30px;
+        text-align: right;
+        width: 70%;
+    }
+    .card img{
+        width: 70%;
+        aspect-ratio: 1 / 1;    /* Соотношение сторон 1:1 делает элемент квадратным */
+        overflow: hidden; 
+    }
+}
+
+
+.MiddleText{
+    display: grid;
+    grid-template-columns: 300px 1160px; /* задаем размеры колонок */
+    align-items: stretch;
+}
+
+
+#MiddleTextLeft {
+    float: left;
+    border: 3px outset rgb(0, 0, 0);
+	width: 100%;
+    height: 100%;
+    background-color: rgb(178, 159, 202);
+    text-align: center;
+}
+
+#MiddleTextLeft p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#MiddleTextLeft nav ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox для списка */
+    flex-direction: column; /* Располагаем элементы вертикально */
+    justify-content: center; /* Центрируем элементы по вертикали */
+    align-items: center; /* Центрируем элементы по горизонтали */
+}
+
+#MiddleTextLeft nav li {
+    margin: 10px 0; /* Отступы между элементами списка */
+}
+
+#MiddleTextLeft nav a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #333; /* Цвет текста */
+    padding: 10px 20px; /* Добавляем внутренние отступы */
+    background-color: rgb(178, 159, 202);
+    border-radius: 5px; /* Закругляем углы ссылок */
+    transition: background-color 0.3s ease; /* Плавная анимация при наведении */
+}
+
+#MiddleTextLeft nav a:hover {
+    background-color: #dddddd81;
+}
+
+
+#MiddleTextRight {
+    border: 3px outset rgb(0, 0, 0);
+	width: 100%;
+    height: auto;
+    
+}
+
+
+
+.MiddleImRight p{
+    margin-left: 30%;
+
+}
+
+
+#MiddleTextRight h{
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    margin-left: 25%;
+}
+
+#MiddleTextRight h2{
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    margin-left: 25%;
+}
+
+#MiddleTextRight h1{
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    margin-left: 10%;
+}
+
+#MiddleTextRight p{
+    margin-left: 1%;
+}
+
+#MiddleTextRight h3{
+    font-family: 'Courier New', Courier, monospace;
+    color:#ffffff; 
+    margin-left: 1%;
+}
+
+#MiddleTextRight h6{
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(204, 237, 204);
+}
+
+
+
+
+
+#MiddleTextRight th, td {
+    border: 5px solid #dddddd;
+    text-align: left;
+    color: white; 
+    -webkit-text-stroke: black;
+    padding: 8px;
+    font-style: oblique;
+}
+#MiddleTextRight th {
+    background-color: hsl(267, 50%, 62%);
+    text-align: center;
+}
+
+#MiddleTextRight input[type="checkbox"]{
+    margin-left: 45%;
+}
+
+#MiddleTextRight h4{
+    font-family: 'Courier New', Courier, monospace;
+    color:#ffffff; 
+    margin-left: 1%;
+
+}
+
+#Text p{
+    color:white; 
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    
+}
+
+@media (max-width: 480px) {
+    .MiddleImRight figure {
+        flex: 1 1 100%; /* На маленьких экранах карточки занимают всю ширину контейнера */
+    }
+}
+
+
+
+
+.MiddleText a{
+    text-decoration: none;
+}
+
+.MiddleText li{
+    list-style-type: none;
+    margin-top: 10%; 
+}
+
+.BottomPanel{
+    border: 3px outset rgb(0, 0, 0);
+    height: 100px; 
+    width: 100%;
+}
+
+.BottomPanel p{
+    text-align: center;
+    vertical-align: center;
+}
+
+
+.Footer{
+    display: inline;
+}
+
+.MiddleImRight button{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    background-color: #bce9e7; 
+    border-width: 0;
+    border-radius: 0.4em;
+    padding: 0.5em 1.5em;
+    cursor: pointer; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button:active{
+    transform: scale(0.95); 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+}
+
+
+button:hover{
+    transform: scale(0.99); 
+   
+}
+
+button{
+    cursor: pointer; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.forma_obr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: none;
+}
+
+.forma_obr_content {
+    border-radius: 0.6em;
+    background-color: #d97fbfb7;
+    margin: auto; /* 15% сверху и центрирование */
+    padding: 10px;
+    border: 1px solid #ca89da;
+    width: 300px; /* Ширина */
+    height: 800px;
+    color:#ffffff;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+}
+
+body.forma_obr-open {
+    overflow: hidden;
+}
+
+
+.forma_obr_content h1{
+    text-align: center; 
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.forma_obr_content h2{
+    text-align: center; 
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.forma_obr_content button{
+    background-color: #d97fbf;
+    border-radius: 0.4em;
+    width: 100px;
+    height: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: white; 
+}
+
+input[type="name"],
+input[type="tel"],
+input[type="email"],
+input[type="message"], 
+input[type="date"],
+textarea,
+select[type="country"]{
+    width: 100%; /* Полная ширина */
+            padding: 12px; /* Внутренние отступы */
+            margin: 10px 0; /* Внешние отступы */
+            border: 2px solid #ddd; /* Граница */
+            border-radius: 4px; /* Скругление углов */
+            box-sizing: border-box; /* Учет отступов в ширине */
+            transition: border-color 0.3s ease; /* Плавное изменение цвета границы */
+}
+
+.close-button {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+#welcome img{
+    float: right;
+    margin-right: 15px;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card{
+    border: 3px outset rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
+}
+
+
+
+.smm-title {
+    
+    text-align: center; /* Центрирование заголовка */
+    font-size: 24px; /* Размер шрифта */
+    margin-bottom: 20px; /* Отступ снизу перед карточками */
+    color: #333; /* Цвет текста */
+}
+
+
+.grid-container button{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    background-color: #bce9e7; 
+    border-width: 0;
+    border-radius: 0.4em;
+    padding: 0.5em 1.5em;
+    cursor: pointer; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.grid-item:hover {
+    border-color: #007BFF; /* Цвет рамки при наведении */
+    box-shadow: 0px 8px 16px rgba(0, 123, 255, 0.5); /* Изменение тени при наведении */
+}
+
+
+/* Для мобильных устройств */
+@media (max-width: 480px) {
+    .MiddleText {
+        display: block;
+    }
+    .MenuDiv {
+        flex-direction: column; /* Вертикальное расположение меню */
+    }
+    #MiddleTextLeft,
+    #MiddleTextRight {
+        width: 100%; /* Ширина 100% */
+    }
+    #MiddleTextRight img{
+        width: 110px;
+    }
+    #MiddleTextRight table{
+        width: 100%;
+        max-width: 100%; /* или другая фиксированная ширина */
+        border-collapse: collapse;
+        margin: auto;
+        margin-bottom: 40px;
+        background-color: rgb(178, 159, 202);
+        overflow-x: auto;
+        display: block; /* Это важно для работы прокрутки */
+    }
+    .MiddleImRight {
+        display: grid; /* Используем Grid для контейнера */
+        grid-template-columns: repeat(auto-fill, minmax(250px, 3fr)); /* Автоматическое распределение колонок с минимальной шириной 250px */
+        grid-gap: 20px; /* Промежутки между карточками */
+        padding: 20px; /* Отступы внутри контейнера */
+    }
+    
+    .MiddleImRight figure {
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    
+    .MiddleImRight figure:hover {
+        border-color: #007BFF; /* Изменение цвета рамки при наведении */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Увеличение тени при наведении */
+    }
+    #web img{
+        width: 80%;
+    }
+}
+
+/* Для планшетов */
+@media (min-width: 481px) and (max-width: 768px) {
+    .MiddleText {
+        display: flex; /* Горизонтальное расположение */
+        flex-direction: column; /* Вертикальное расположение */
+    }
+    .MiddleImRight {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Колонки с минимальной шириной 250px */
+        grid-gap: 20px; /* Промежутки между карточками */
+        padding: 20px;
+    }
+    
+    .MiddleImRight figure {
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        text-align: center;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Выравнивание элементов внутри карточки */
+        height: 100%;
+    }
+    
+    .MiddleImRight figure button {
+        width: 100%; /* Кнопка растягивается по ширине карточки */
+        padding: 10px; /* Отступы внутри кнопки */
+        max-width: 100%; /* Максимальная ширина кнопки */
+    }
+    
+    .MiddleImRight figure:hover {
+        border-color: #007BFF; /* Изменение цвета рамки при наведении */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Увеличение тени при наведении */
+    }
+    
+    #web img{
+        width: 80%;
+        height: 80%;
+        margin-left: 10%;
+    }
+    #welcome img{
+        width: 200px;
+    }
+    .MenuDiv ul {
+        flex-direction: column; /* Меню станет вертикальным */
+        align-items: center;    /* Центрируем элементы */
+    }
+
+    .MenuDiv li {
+        padding: 10px 0;       /* Уменьшенные отступы */
+        font-size: 16px;       /* Уменьшаем шрифт для экономии пространства */
+    }
+
+    .MenuDiv a {
+        padding: 8px 15px;     /* Уменьшаем отступы внутри ссылок */
+    }
+    .MiddleImRight figure {
+        flex: 1 1 45%; /* На средних экранах карточки занимают 45% ширины */
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 3 колонки одинаковой ширины */
+        grid-template-rows: repeat(3, auto); /* 2 строки с высотой, автоматически подстраивающейся под контент */
+        gap: 20px; /* Отступы между элементами сетки */
+        padding: 20px; /* Отступы внутри контейнера */
+        background-color: rgb(178, 159, 202);
+    }
+    
+    .grid-item {
+        background-color: rgb(178, 159, 202);
+        border: 1px solid #ddd; /* Граница */
+        padding: 15px; /* Внутренние отступы */
+        text-align: center; /* Центрирование текста */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Тень для карточек */
+    }
+    .card img{
+        width: 70%;
+        aspect-ratio: 1 / 1;    /* Соотношение сторон 1:1 делает элемент квадратным */
+        overflow: hidden; 
+    }
+    #MiddleTextRight table{
+        width: 90%;
+        margin-left: 200px;
+        border-collapse: collapse;
+        margin: auto;
+        margin-bottom: 40px;
+        background-color: rgb(178, 159, 202);
+    }
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;  /* Центрирование по горизонтали */
+    align-items: center;      /* Центрирование по вертикали */
+    height: 200px;
+}
+
+.video-container video {
+    max-width: 100%;          /* Ограничиваем размер видео, чтобы оно не выходило за пределы контейнера */
+    max-height: 100%;         /* Ограничиваем максимальную высоту видео */
+}
+
+.adress {
+    display: flex;
+    justify-content: center;  /* Центрирование по горизонтали */
+    align-items: center;      /* Центрирование по вертикали */
+    height: 300px;
+}
+
+.adress iframe {
+    max-width: 100%;          /* Ограничиваем размер видео, чтобы оно не выходило за пределы контейнера */
+    max-height: 100%;         /* Ограничиваем максимальную высоту видео */
+}
+
+.program {
+    display: flex;
+    justify-content: center;  /* Центрирование по горизонтали */
+    align-items: center;      /* Центрирование по вертикали */
+    height: 300px;
+}
+
+.program object {
+    max-width: 50%;          /* Ограничиваем размер видео, чтобы оно не выходило за пределы контейнера */
+    max-height: 100%;         /* Ограничиваем максимальную высоту видео */
+}
+
+
+/* Для десктопов */
+@media (min-width: 769px) {
+    .MiddleText {
+        display: grid; /* Используем сетку для десктопов */
+        grid-template-columns: 1fr 3fr; /* 1:3 соотношение */
+    }
+    #MiddleTextRight img{
+        width: 200px;
+    }
+    #MiddleTextRight table{
+        width: 90%;
+        margin-left: 200px;
+        border-collapse: collapse;
+        margin: auto;
+        margin-bottom: 40px;
+        background-color: rgb(178, 159, 202);
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
+        grid-template-rows: repeat(2, auto); /* 2 строки с высотой, автоматически подстраивающейся под контент */
+        gap: 20px; /* Отступы между элементами сетки */
+        padding: 20px; /* Отступы внутри контейнера */
+        background-color: rgb(178, 159, 202);
+    }
+    
+    .grid-item {
+        background-color: rgb(178, 159, 202);
+        border: 1px solid #ddd; /* Граница */
+        padding: 15px; /* Внутренние отступы */
+        text-align: center; /* Центрирование текста */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Тень для карточек */
+    }
+    #MiddleTextLeft {
+        margin-bottom: 20px;
+    }
+    .MiddleImRight {
+        display: grid; /* Используем Grid для контейнера */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Автоматическое распределение колонок с минимальной шириной 250px */
+        grid-gap: 20px; /* Промежутки между карточками */
+        padding: 20px; /* Отступы внутри контейнера */
+    }
+    
+    .MiddleImRight figure {
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    
+    .MiddleImRight figure:hover {
+        border-color: #007BFF; /* Изменение цвета рамки при наведении */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Увеличение тени при наведении */
+    }
+    
+    #web img{
+        width: 200px;
+        height: 200px;
+
+    }
+    .card img{
+        width: 70%;
+        aspect-ratio: 1 / 1;    /* Соотношение сторон 1:1 делает элемент квадратным */
+        overflow: hidden; 
+    }
+}
+
+iframe, object {
+    max-width: 100%; /* Ограничиваем максимальную ширину */ /* Автоматическая высота */
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px; /* Располагаем внизу страницы */
+    right: 20px;
+    padding: 10px 15px;
+    background-color:  var(--details-color);;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    display: none; /* Скрыта по умолчанию */
+}
+
+#scrollToTop:hover {
+    background-color: var(--secondary-color);
+}
+
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+
+  .carousel-inner {
+    max-width: 800px;
+    max-height: 400px;
+    margin: auto;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }

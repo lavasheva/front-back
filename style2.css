@@ -1,0 +1,138 @@
+
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(178, 159, 202);
+  }
+
+
+  .carousel-inner {
+    background-color: rgb(178, 159, 202);
+    max-width: 800px;
+    max-height: 400px;
+    margin: auto;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .body{
+    background-color: rgb(178, 159, 202);
+}
+
+.TopDiv {
+    border: 3px outset rgb(0, 0, 0);
+    width: 100%;
+    overflow: hidden;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: large;
+  }
+#LeftTopDiv img {
+    width: 70px;
+}
+#LeftTopDiv {
+    width: 70px;
+    float: left;
+    margin-left: 3%;
+    margin-top: 1%;
+    text-align: center;
+}
+#RightTopDiv {
+    float: right;
+    margin-right: 30px;
+    text-align: right;
+}
+
+.BottomPanel{
+    border: 3px outset rgb(0, 0, 0);
+    height: 100px; 
+    width: 100%;
+}
+
+.BottomPanel p{
+    text-align: center;
+    vertical-align: center;
+}
+
+
+.Footer{
+    display: inline;
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px; /* Располагаем внизу страницы */
+    right: 20px;
+    padding: 10px 15px;
+    background-color:  var(--details-color);;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    display: none; /* Скрыта по умолчанию */
+}
+
+#scrollToTop:hover {
+    background-color: var(--secondary-color);
+}
+
+
+@media (min-width: 769px) {
+.nav-item.dropdown {
+    position: relative; /* Убедитесь, что родительский элемент имеет относительное позиционирование */
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+  }
+}
+  
+.accordion-collapse{
+    background-color: rgb(178, 159, 202);
+}
+
+/* Убираем закругления на кнопках аккордеона */
+.accordion-button {
+    border-radius: 0; /* Убираем закругление */
+  }
+  
+  /* Убираем закругления на элементах аккордеона */
+  .accordion-item {
+    border-radius: 0; /* Убираем закругление на аккордеон-элементе */
+    border: none; /* Опционально, если хотите убрать границу */
+  }
+  
+  .funny-form {
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .funny-form h2 {
+    color:  rgb(178, 159, 202);;
+  }
+  .funny-form .form-control {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  .funny-form button {
+    background-color:  rgb(178, 159, 202);;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  .funny-form button:hover {
+    background-color:  rgb(178, 159, 202);
+  }
+
